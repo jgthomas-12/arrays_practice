@@ -65,4 +65,21 @@ puts nature[1]                      # This will print out "rocks" which has been
 puts nature[2]                      # This will print out "wind" again due to the shift
 puts nature[3]                      # This will not print out anything and has a `nil` value
 puts numbers[2]                     # This will print out "345"
-puts numbers [4]                    # This will print out "57"    
+puts numbers[4]                     # This will print out "57"    
+puts""
+puts numbers
+puts""
+puts numbers[-4]                    # This will print out the fouth place from the END of the array
+puts numbers[-1]                    # This will print out the last place of the array. The "first" place from the end
+                                    # working backwards.
+
+# Other new array methods
+
+puts""
+puts nature.first                   # This will print the first element in the nature array. 
+puts nature.last                    # This will print the last element in the nature array
+puts nature.take (3)                # This will print the first (specified amount) of elements of the nature array. 
+puts nature.length                  # This will print the number of elements in the nature array. 
+puts nature.count                   # This will also print the number of elements in the nature array.
+puts nature.empty?                  # This will return a boolean result telling us whether or not the array is empty.
+puts nature.include?("computers")   # This will tell us if the nature array includes the word computers with a boolean result.
