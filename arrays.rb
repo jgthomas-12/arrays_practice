@@ -47,6 +47,22 @@ puts ""
 # at the beginning of the given array. It will then list the rest of the array. 
 
 puts booleans.unshift("true")       # This will add a "true" in front of "true, false, false, true"
-puts nature.unshift("dogshit")      # This will add "dogshit" in front of "rocks and wind". The rest of the nature
+puts nature.unshift("dog shit")     # This will add "dog shit" in front of "rocks and wind". The rest of the nature
                                     #  array has already been affected by the earlier .pop and .push methods.
-                                    
+
+# Index positions:
+
+# The index positions will relate to the elements as they currently sit in the array. In the nature examples
+# below we will see the current standings after all of our adjustments above. "0" relates to the first element
+# position, "1" relates to the second position, "2" relates to the third position and so on. You can call on a 
+# specific position by listing the desired, established array with the desired element position in square brackets
+# at the end of the array. Ex: established_array[element position]
+
+puts ""
+puts nature[0]                      # This will print out "dog shit" from the last unshift we executed
+puts nature[1]                      # This will print out "rocks" which has been moved to the second position due to 
+                                    # the ".unshift" method above
+puts nature[2]                      # This will print out "wind" again due to the shift
+puts nature[3]                      # This will not print out anything and has a `nil` value
+puts numbers[2]                     # This will print out "345"
+puts numbers [4]                    # This will print out "57"    
